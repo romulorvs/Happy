@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 45px;
 }
 
 #page-landing .content-wrapper{
@@ -22,7 +23,9 @@
 
     justify-content: space-between;
 
-    background: url('../../images/landing.svg') no-repeat 80% center;
+    background: url('../../images/landing.svg') no-repeat 75% center;
+    
+    background-size: contain;
 }
 
 #page-landing .content-wrapper main{
@@ -54,6 +57,17 @@
 
 .content-wrapper .location strong{
     font-weight: 800;
+}
+
+@media (max-height: 768px){
+    #page-landing .content-wrapper main h1{
+        font-size: 64px;
+    }
+    
+    #page-landing .content-wrapper main p,
+    .content-wrapper .location{
+        font-size: 20px;
+    }
 }
 
 .content-wrapper .enter-app{
